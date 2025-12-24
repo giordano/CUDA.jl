@@ -122,5 +122,5 @@ jobs:
           build-args: |
             JULIA_VERSION=${{ matrix.julia }}
             CUDA_VERSION=${{ matrix.cuda }}
-            PACKAGE_SPEC=CUDA#${{ steps.pkg.outputs.ref }}
+            PACKAGE_SPEC=https://github.com/giordano/CUDA.jl#${{ steps.pkg.outputs.ref }}
             JULIA_CPU_TARGET=${{ steps.cpu_target.outputs.target }}
